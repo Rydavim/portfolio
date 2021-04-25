@@ -2,6 +2,8 @@
 
 a:hover { cursor: pointer; }
 
+/* NB: Color descriptions are reminder notes, not official names. */
+
 body {
   font-family: sans-serif;
   background-color: #FFFFCC; /* manilla */
@@ -46,6 +48,10 @@ img {
   border-style: inset;
   border-width: 1rem;
   border-color: #99CC00; /* leafy green */
+}
+
+.creative-commons {
+  border-color: #CC00CC; /* magenta */
 }
 
 img[src$=".png"] {
