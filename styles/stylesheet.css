@@ -4,7 +4,10 @@
 
 a:hover { cursor: pointer; }
 
-.container { display: flex; }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* NB: Color descriptions are reminder notes, not official names. */
 
@@ -84,8 +87,30 @@ aside {
   border: 0.25rem solid #8FBE00; /* feeble week (grass green) */
 }
 
-/* CLASSES & OTHER */
+/* CLASSES, IDs & OTHER */
 
 i {
   padding-right: 0.25rem;
+}
+
+.container h2 {
+  width: 100%;
+}
+
+#projects,
+#about {
+  justify-content: space-between;
+}
+
+#projects article {
+  width: 48.75%;
+}
+
+#about article {
+  width: 79%;
+}
+
+#about aside {
+  width: 19%;
+  justify-self: flex-start;
 }
