@@ -1,58 +1,68 @@
+/* GENERAL */
+
 * { box-sizing: border-box; }
 
 a:hover { cursor: pointer; }
+
+.container { display: flex; }
 
 /* NB: Color descriptions are reminder notes, not official names. */
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FFFFCC; /* manilla */
+  background-color: #F9F2E7; /* whitetrash */
+  color: #363636; /* warm dark grey */
+}
+
+/* NAVIGATION */
+
+nav ul {
+  padding: 0;
+  border-bottom: 4px solid #363636; /* warm dark grey */
 }
 
 nav li {
+  margin-right: 1rem;
+  padding: 0.5rem;
   list-style-type: none;
+  background-color: #40C0CB; /* teal drop */
+  border-radius: 1em 1em 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #363636; /* warm dark grey */
 }
 
 nav a:hover {
-  background-color: #DDCCFF; /* lavender */
+  color: #F9F2E7; /* whitetrash */
 }
+
+/* HEADERS & HEADINGS */
 
 h1 {
   font-family: 'Lobster', cursive;
+  color: #363636; /* warm dark grey */
+  background-color: #40C0CB; /* teal drop */
   padding: 0.5rem;
   font-weight: bold;
-  border-style: solid;
-  border-width: 0.25rem;
+  border: 0.25rem solid;
 }
 
-h2 {
-  text-decoration: underline;
-  color: orangered;
-}
-
-h3 {
-  padding: 0.25rem;
-  border-style: dotted;
-  border-width: 8px;
-  border-color: hsl(184, 54%, 36%); /* medium teal */
-}
+/* SEMANTIC ELEMENTS */
 
 article {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  background-color: #C2D1F0; /* pale blue-purple */
+  background-color: #AEE239; /* atomic bikini (spring green) */
 }
 
 img {
   max-width: 75%;
-  border-style: inset;
-  border-width: 1rem;
-  border-color: #99CC00; /* leafy green */
-}
-
-.creative-commons {
-  border-color: #CC00CC; /* magenta */
+  border: 0.5rem solid #8FBE00; /* feeble week (grass green) */
+  border-radius: 0.25rem;
 }
 
 img[src$=".png"] {
@@ -71,7 +81,11 @@ small {
 aside {
   display: inline-block;
   padding: 0.25rem;
-  border-style: outset;
-  border-width: .5rem;
-  border-color: #604020; /* dark brown */
+  border: 0.25rem solid #8FBE00; /* feeble week (grass green) */
+}
+
+/* CLASSES & OTHER */
+
+i {
+  padding-right: 0.25rem;
 }
