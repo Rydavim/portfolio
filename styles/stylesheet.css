@@ -63,18 +63,15 @@ article {
 }
 
 img {
-  max-width: 75%;
+  max-width: 100%;
   border: 0.5rem solid #8FBE00; /* feeble week (grass green) */
   border-radius: 0.25rem;
 }
 
-img[src$=".png"] {
-  box-sizing: content-box;
-  padding: 0.5rem;
-}
-
 footer {
   color: rgba(0, 0, 0, .5);
+  font-size: 0.75rem;
+  font-weight: 100;
 }
 
 small {
@@ -82,7 +79,6 @@ small {
 }
 
 aside {
-  display: inline-block;
   padding: 0.25rem;
   border: 0.25rem solid #8FBE00; /* feeble week (grass green) */
 }
@@ -93,12 +89,7 @@ i {
   padding-right: 0.25rem;
 }
 
-.container h2 {
-  width: 100%;
-}
-
-#projects,
-#about {
+#projects {
   justify-content: space-between;
 }
 
@@ -106,11 +97,22 @@ i {
   width: 48.75%;
 }
 
-#about article {
-  width: 79%;
+.container h2 {
+  width: 100%;
 }
 
-#about aside {
-  width: 19%;
-  justify-self: flex-start;
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#about > :last-child {
+  flex-grow: 1;
+}
+
+#main-content {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 70%;
 }
