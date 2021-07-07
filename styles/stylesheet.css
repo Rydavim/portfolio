@@ -63,12 +63,6 @@ article {
   background-color: #AEE239; /* atomic bikini (spring green) */
 }
 
-img {
-  max-width: 100%;
-  border: 0.5rem solid #8FBE00; /* feeble week (grass green) */
-  border-radius: 0.25rem;
-}
-
 body > footer {
   text-align: center;
   font-size: 0.75rem;
@@ -82,7 +76,12 @@ aside {
 /* CLASSES, IDs & OTHER */
 
 i {
-  padding-right: 0.25rem;
+  padding-right: 0.5rem;
+  transition: color 2s 1s;
+}
+
+i:hover {
+  color: #FA6900; /* unreal food pills (burnt orange) */
 }
 
 .display-heading {
@@ -91,30 +90,66 @@ i {
   font-weight: bold;
 }
 
+#current-page {
+  border-bottom: 0.25rem solid #73F3FE; /* lightened teal drop */
+}
+
 #projects {
   justify-content: space-between;
 }
 
 #projects article {
-  width: 48.75%;
+  width: 32%;
+}
+
+#projects article:nth-child(odd) {
+  background-color: #8FBE00; /* feeble weak (grass green) */
+}
+
+#projects a {
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: #00A8C6; /* tropiteal (dark teal) */
+}
+
+#projects a[href^="https://github.com"]:hover {
+  color: #FA6900; /* unreal food pills (burnt orange) */
 }
 
 .container h2 {
   width: 100%;
 }
 
-#about {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 #about > :last-child {
   flex-grow: 1;
+  padding: 0.75rem;
 }
 
 #main-content {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 70%;
+}
+
+#gallery ul {
+  padding: 0;
+  gap: 0.75rem;
+}
+
+#gallery li {
+  list-style: none;
+}
+
+#gallery img {
+  height: 24rem;
+  max-width: 100%;
+  border: 0.5rem solid #8FBE00; /* feeble week (grass green) */
+  align-content: stretch;
+  transition: height 3s;
+}
+
+#gallery img:hover {
+  height: 36rem;
 }
