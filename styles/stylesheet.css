@@ -45,12 +45,13 @@ nav a:hover {
 /* HEADERS & HEADINGS */
 
 h1 {
-  font-family: 'Lobster', cursive;
-  color: #363636; /* warm dark grey */
-  background-color: #40C0CB; /* teal drop */
   padding: 0.5rem;
-  font-weight: bold;
+  background-color: #40C0CB; /* teal drop */
   border: 0.25rem solid;
+}
+
+section h2 {
+  padding-left: 0.75rem;
 }
 
 /* SEMANTIC ELEMENTS */
@@ -68,29 +69,26 @@ img {
   border-radius: 0.25rem;
 }
 
-footer {
-  color: rgba(0, 0, 0, .5);
+body > footer {
+  text-align: center;
   font-size: 0.75rem;
   font-weight: 100;
 }
 
-body > footer {
-  text-align: center;
-}
-
-small {
-  font-size: 0.5rem;
-}
-
 aside {
   padding: 0.25rem;
-  border: 0.25rem solid #8FBE00; /* feeble week (grass green) */
 }
 
 /* CLASSES, IDs & OTHER */
 
 i {
   padding-right: 0.25rem;
+}
+
+.display-heading {
+  font-family: 'Lobster', cursive;
+  color: #363636; /* warm dark grey */
+  font-weight: bold;
 }
 
 #projects {
