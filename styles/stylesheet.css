@@ -34,6 +34,7 @@ nav li {
 
 nav a {
   text-decoration: none;
+  padding-bottom: 0.1rem;
   font-weight: bold;
   color: #363636; /* warm dark grey */
 }
@@ -91,7 +92,7 @@ i:hover {
 }
 
 #current-page {
-  border-bottom: 0.25rem solid #73F3FE; /* lightened teal drop */
+  border-bottom: 0.25rem solid #F9F2E7; /* whitetrash */
 }
 
 #projects {
@@ -114,7 +115,8 @@ i:hover {
   color: #00A8C6; /* tropiteal (dark teal) */
 }
 
-#projects a[href^="https://github.com"]:hover {
+#projects a[href^="https://github.com"]:hover,
+#projects a[href^="https://rydavim.github.io"]:hover {
   color: #FA6900; /* unreal food pills (burnt orange) */
 }
 
