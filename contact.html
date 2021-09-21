@@ -22,8 +22,57 @@
       </nav>
     </header>
 
-    <form class="contact" action="index.html" method="post">
-      
+    <h2 class="display-heading">Contact Form</h2>
+    <form method="GET">
+      <label>Name:
+        <input type="text" name="contactName">
+      </label>
+
+      <label>Email:
+        <input type="email" name="contactEmail">
+      </label>
+
+      <label>Phone Number:
+        <input type="tel" name="contactPhone">
+      </label>
+
+      <fieldset class="checkbox">
+        <legend>What information are you interested in?</legend>
+        <label>General Information
+          <input type="checkbox" name="infoRequest" value="general">
+          <span class="checkmark"></span>
+        </label>
+        <label>Instructor Availability
+          <input type="checkbox" name="infoRequest" value="availability">
+          <span class="checkmark"></span>
+        </label>
+        <label>Specific Requirements
+          <input type="checkbox" name="infoRequest" value="requirements">
+          <span class="checkmark"></span>
+        </label>
+        <label>Other
+          <input type="checkbox" name="infoRequest" value="other">
+          <span class="checkmark"></span>
+        </label>
+      </fieldset>
+
+      <label>Message
+        <textarea name="message" rows="4" cols="50"></textarea>
+      </label>
+
+      <fieldset>
+        <legend>How would you prefer to be contacted?</legend>
+        <label>
+          <input type="radio" name="contact" value="email">
+          Email
+        </label>
+        <label>
+          <input type="radio" name="contact" value="tel">
+          Phone
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Send Message">
     </form>
 
     <footer>
